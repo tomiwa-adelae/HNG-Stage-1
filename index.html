@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tomiwa Adelae - HNG Stage 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Tomiwa Adelae</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="home-page">
+
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="card-header">
+        <h1 class="profile-name" data-testid="test-user-name">Tomiwa Adelae</h1>
+        <div
+          class="profile-time"
+          data-testid="test-user-time"
+          aria-label="Current time in milliseconds"
+        >
+          <span id="timeDisplay">Loading...</span>
+        </div>
+      </header>
+
+      <div class="card-body">
+        <div class="avatar">
+          <img
+            src="/assets/profile-img.webp"
+            alt="Tomiwa Adelae Profile Picture"
+            data-testid="test-user-avatar"
+          />
+          <p class="role">Full Stack Developer</p>
+        </div>
+
+        <div class="info">
+          <section class="section">
+            <h2>About Me</h2>
+            <p data-testid="test-user-bio">
+              Hello, my name is Tomiwa Adelae 👋 As a website programmer and
+              freelancer for over four years, I've completed personal projects,
+              remote work for agencies, and consulted for startups.
+              Collaborating with talented individuals, I've created digital
+              products for diverse uses. I'm quiet confident, naturally curious,
+              and continually strive to enhance my skills with each design
+              challenge.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2>Connect With Me</h2>
+            <div
+              class="social-links"
+              data-testid="test-user-social-links"
+              aria-label="Social media links"
+            >
+              <a
+                href="https://twitter.com/tomiwaadelae"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+              <a
+                href="https://github.com/tomiwa-adelae"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+              <a
+                href="https://linkedin.com/in/tomiwaadelae"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Hobbies</h2>
+            <ul data-testid="test-user-hobbies">
+              <li>Building side projects</li>
+              <li>Learning new frameworks</li>
+              <li>Reading tech blogs</li>
+              <li>Watching football</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Dislikes</h2>
+            <ul data-testid="test-user-dislikes">
+              <li>Unclear documentation</li>
+              <li>Merge conflicts 😩</li>
+              <li>Slow Wi-Fi</li>
+              <li>Messy codebases</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

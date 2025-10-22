@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - HNG Stage 1</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Tomiwa Adelae</a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html" class="active">Contact</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="contact-container">
+      <header class="page-header">
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">
+          I'd love to hear from you! Fill out the form below and I'll get back to you soon.
+        </p>
+      </header>
+
+      <!-- Success Message -->
+      <div class="success-message" id="successMessage" data-testid="test-contact-success">
+        <h3>✓ Message Sent Successfully!</h3>
+        <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="fullName" class="form-label">
+            Full Name <span class="required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="fullName" 
+            class="form-input"
+            data-testid="test-contact-name"
+            aria-describedby="nameError"
+            required
+          />
+          <span class="error-message" id="nameError" data-testid="test-contact-error-name" role="alert">
+            Please enter your full name
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">
+            Email Address <span class="required">*</span>
+          </label>
+          <input 
+            type="email" 
+            id="email" 
+            class="form-input"
+            data-testid="test-contact-email"
+            aria-describedby="emailError"
+            required
+          />
+          <span class="error-message" id="emailError" data-testid="test-contact-error-email" role="alert">
+            Please enter a valid email address
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">
+            Subject <span class="required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="subject" 
+            class="form-input"
+            data-testid="test-contact-subject"
+            aria-describedby="subjectError"
+            required
+          />
+          <span class="error-message" id="subjectError" data-testid="test-contact-error-subject" role="alert">
+            Please enter a subject
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">
+            Message <span class="required">*</span>
+          </label>
+          <textarea 
+            id="message" 
+            class="form-textarea"
+            data-testid="test-contact-message"
+            aria-describedby="messageError"
+            required
+          ></textarea>
+          <span class="error-message" id="messageError" data-testid="test-contact-error-message" role="alert">
+            Message must be at least 10 characters long
+          </span>
+        </div>
+
+        <button type="submit" class="submit-btn" data-testid="test-contact-submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Link your JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - HNG Stage 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Tomiwa Adelae</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+                ☰
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Me</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="about-main" data-testid="test-about-page">
+        <div class="about-container">
+            <header class="page-header">
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">
+                    A deeper dive into my journey, aspirations, and reflections as I navigate the HNG Internship program.
+                </p>
+            </header>
+
+            <!-- Bio Section -->
+            <section class="about-section bio-section">
+                <div class="section-header">
+                    <span class="section-icon">👨‍💻</span>
+                    <h2 class="section-title">My Story</h2>
+                </div>
+                <div class="section-content" data-testid="test-about-bio">
+                    <p>
+                        Hi! I'm John Doe, a passionate full stack developer with a deep love for creating meaningful digital experiences. 
+                        My journey into tech started three years ago when I built my first website, and I haven't looked back since.
+                    </p>
+                    <p>
+                        I specialize in modern web technologies including HTML, CSS, JavaScript, React, Node.js, and various backend frameworks. 
+                        What drives me is the ability to transform ideas into functional, beautiful applications that solve real-world problems. 
+                        I believe that great code is not just about functionality—it's about creating experiences that users love.
+                    </p>
+                    <p>
+                        Beyond coding, I'm an avid learner who constantly seeks to expand my skill set. I contribute to open-source projects, 
+                        write technical blog posts, and mentor aspiring developers in my community. The tech world moves fast, and I thrive 
+                        on staying at the cutting edge of innovation.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Goals Section -->
+            <section class="about-section goals-section">
+                <div class="section-header">
+                    <span class="section-icon">🎯</span>
+                    <h2 class="section-title">My Goals in HNG</h2>
+                </div>
+                <div class="section-content" data-testid="test-about-goals">
+                    <p>
+                        Joining the HNG Internship is a strategic step in my career development. Here's what I aim to achieve:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Master collaborative development:</strong> Work with talented developers from diverse backgrounds 
+                            and learn industry-standard collaboration practices using Git, code reviews, and agile methodologies.
+                        </li>
+                        <li>
+                            <strong>Build production-ready projects:</strong> Move beyond tutorial projects and create real-world 
+                            applications that demonstrate my ability to ship quality code under deadlines.
+                        </li>
+                        <li>
+                            <strong>Expand my technical stack:</strong> Learn new frameworks, libraries, and tools that are in high 
+                            demand in the industry, particularly focusing on scalable architecture and cloud technologies.
+                        </li>
+                        <li>
+                            <strong>Network with industry professionals:</strong> Connect with mentors, fellow interns, and potential 
+                            employers who can provide guidance and opportunities for growth.
+                        </li>
+                        <li>
+                            <strong>Develop soft skills:</strong> Improve my communication, time management, and problem-solving 
+                            abilities through the fast-paced, challenging environment of the internship.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Confidence Section -->
+            <section class="about-section confidence-section">
+                <div class="section-header">
+                    <span class="section-icon">📊</span>
+                    <h2 class="section-title">Areas of Low Confidence</h2>
+                </div>
+                <div class="section-content" data-testid="test-about-confidence">
+                    <p>
+                        Growth comes from acknowledging our weaknesses. Here are areas where I need improvement:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Advanced algorithmic problem-solving:</strong> While I can solve basic algorithms, complex data 
+                            structures and optimization problems still challenge me. I plan to dedicate time to LeetCode and similar platforms.
+                        </li>
+                        <li>
+                            <strong>System design and architecture:</strong> Designing scalable systems with proper architecture patterns 
+                            is something I'm still learning. I need more exposure to real-world large-scale applications.
+                        </li>
+                        <li>
+                            <strong>DevOps and deployment:</strong> While I understand the basics of deployment, I lack confidence in 
+                            CI/CD pipelines, containerization with Docker, and cloud infrastructure management.
+                        </li>
+                        <li>
+                            <strong>Testing and TDD:</strong> Writing comprehensive tests and following Test-Driven Development practices 
+                            is an area I need to strengthen to ensure code reliability.
+                        </li>
+                        <li>
+                            <strong>Public speaking and presenting:</strong> Communicating technical concepts to non-technical audiences 
+                            and presenting my work confidently are skills I want to develop.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Future Note Section -->
+            <section class="about-section future-section">
+                <div class="section-header">
+                    <span class="section-icon">💌</span>
+                    <h2 class="section-title">Note to Future Self</h2>
+                </div>
+                <div class="section-content" data-testid="test-about-future-note">
+                    <div class="highlight-box">
+                        <p>
+                            <strong>Dear Future Me,</strong>
+                        </p>
+                        <p>
+                            If you're reading this after completing the HNG Internship, I hope you're proud of how far you've come. 
+                            Remember when you started this journey? Remember the nervousness, the excitement, and the determination to prove yourself?
+                        </p>
+                        <p>
+                            I hope you pushed through every challenge, stayed up late debugging that stubborn code, learned from every mistake, 
+                            and celebrated every small victory. I hope you made meaningful connections with fellow interns and learned not just 
+                            about code, but about resilience, teamwork, and perseverance.
+                        </p>
+                        <p>
+                            Don't forget: every expert was once a beginner. Every successful developer faced the same struggles you did. 
+                            What matters is that you didn't give up. Keep that growth mindset, stay curious, and never stop learning.
+                        </p>
+                        <p>
+                            The journey doesn't end here—it's just the beginning. Take the skills you've gained and use them to build 
+                            something amazing. Help others who are where you once were. And most importantly, enjoy the process.
+                        </p>
+                        <p>
+                            <strong>You've got this!</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Extra Thoughts Section -->
+            <section class="about-section extra-section">
+                <div class="section-header">
+                    <span class="section-icon">💭</span>
+                    <h2 class="section-title">Additional Thoughts</h2>
+                </div>
+                <div class="section-content" data-testid="test-about-extra">
+                    <p>
+                        <strong>Why I chose development:</strong> I've always been fascinated by the intersection of creativity and logic. 
+                        Programming allows me to be both an artist and an engineer—crafting beautiful interfaces while architecting robust systems.
+                    </p>
+                    <p>
+                        <strong>My philosophy:</strong> I believe in writing clean, maintainable code that prioritizes user experience. 
+                        Technology should serve people, not complicate their lives. Every line of code I write is with the end-user in mind.
+                    </p>
+                    <p>
+                        <strong>Beyond tech:</strong> When I'm not coding, you'll find me exploring photography, reading sci-fi novels, 
+                        or experimenting with new recipes in the kitchen. I believe that diverse interests make better developers—the best 
+                        solutions often come from unexpected places.
+                    </p>
+                    <p>
+                        <strong>Looking ahead:</strong> My ultimate goal is to build products that make a positive impact on people's lives. 
+                        Whether it's through improving education access, healthcare delivery, or simply making daily tasks easier, 
+                        I want my work to matter.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+     <script src="main.js"></script>
+</body>
+</html>
