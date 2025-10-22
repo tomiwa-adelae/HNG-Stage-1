@@ -112,7 +112,7 @@ On successful submission:
 
 ## 🌐 Live Demo
 
-👉 [View the Live Project](https://your-live-demo-link-here.netlify.app)
+👉 [View the Live Project](https://hng-stage-1-ivory.vercel.app)
 
 ---
 
